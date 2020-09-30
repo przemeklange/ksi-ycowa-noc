@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800;900&display=swap" rel="stylesheet">
+    <title>Jazda nocą</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="sectiontwo">
+            <ul>
+                <li><a id="active" href="#">Home</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Price</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+    </div>
+    
+    <section>
+        <img src="./img/bg.jpg" id="bg" alt="">
+        <img src="./img/moon.png" id="moon" alt="">
+        <img src="./img/mountain.png" id="mountain" alt="">
+        <img src="./img/road.png" id="road" alt="">
+        <h2 id="ksiezyc">Księzycowa noc<br><div class="boom">Przemysław Lange</div></h2>
+        
+    </section>
+    <div class="section2">
+        <h2>Lorem Ipsum</h2>
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+    </div>
+    <script>
+        let bg = document.getElementById('bg');
+        let moon = document.getElementById('moon');
+        let mountain = document.getElementById('mountain');
+        let road = document.getElementById('road');
+        let ksiezyc = document.getElementById('ksiezyc');
+
+        window.addEventListener('scroll', function(){
+            var value = window.scrollY;
+            bg.style.top = value * 0.5 + 'px';
+            moon.style.left = -value * 0.5 + 'px';
+            mountain.style.bottom = value * 0.15 + 'px';
+            road.style.top = value * 0.15 + 'px';
+        })
+    </script>
+</body>
+</html>
